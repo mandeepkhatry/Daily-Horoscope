@@ -12,7 +12,7 @@ def scraping():
     zsign = zodiac.get()
     l = implement(zsign)
 
-    label1 = Label(text="Your horoscope is "+l[0],bg="blue",fg="white", font=("Helvetica", 14))
+    label1 = Label(text="Your horoscope is "+l[0],bg="blue",fg="white", font=("Helvetica", 12))
     label1.pack()
 
     label2 = Label(text="Today's date is "+l[1],fg="white",bg="orange", font=("Helvetica", 12))
@@ -21,11 +21,11 @@ def scraping():
     horoscope = l[2].split('.')
     label=[]
     for i in horoscope:
-        label3 = Label(text=i,bg="purple",fg="white", font=("Helvetica", 14))
+        label3 = Label(text=i,bg="purple",fg="white", font=("Helvetica", 12))
         label3.pack()
 
 
-label = Label(text="Enter your zodiac sign ",fg="white",bg="orange", font=("Helvetica", 14))
+label = Label(text="Enter your zodiac sign ",fg="white",bg="orange", font=("Helvetica", 12))
 label.pack()
 
 zodiac = StringVar()
